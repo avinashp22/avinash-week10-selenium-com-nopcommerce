@@ -9,7 +9,7 @@ public class ComNopcommerce {
     static String browser = "firefox"; // choose browser
     static WebDriver driver; // declare globally
 
-    public static void main(String[] args) {
+    public static void main(String[] args)   {
         if (browser.equalsIgnoreCase("Chrome")) {
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("Firefox")) {
