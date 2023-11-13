@@ -43,9 +43,9 @@ public class ComNopcommerce {
         WebElement password = driver.findElement(By.id("Password"));       //find password field and enter password by ID
         password.sendKeys("Halllo123");    // type into box, action
 
-
         WebElement loginLink = driver.findElement(By.className("button-1 login-button")); // hover to login button
         loginLink.click(); // click on login link
+
 
         driver.quit();  // close browser
     }
