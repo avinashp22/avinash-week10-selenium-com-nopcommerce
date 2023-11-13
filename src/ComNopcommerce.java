@@ -43,12 +43,14 @@ public class ComNopcommerce {
         WebElement password = driver.findElement(By.id("Password"));       //find password field and enter password by ID
         password.sendKeys("Halllo123");    // type into box, action
 
-       // NOT WORKING -  WebElement loginLink2 = driver.findElement(By.linkText("LOG IN")); // hover to login button
-        // NOT WORKING -  loginLink2.click(); // click on login link
+       WebElement loginLink2 = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div/div/div/div[2]/div[1]/div[2]/form/div[3]/button")); // hover to login button
+        loginLink2.click(); // click on login link
 
         // NOT WORKING -  WebElement loginLink = driver.findElement(By.className("button-1 login-button")); // hover to login button
         // NOT WORKING -   loginLink.click(); // click on login link
 
+        // NOT WORKING -  WebElement loginLink = driver.findElement(By.name("LOGIN")); // hover to login button
+        // NOT WORKING -   loginLink.click(); // click on login link
 
         driver.quit();  // close browser
     }
