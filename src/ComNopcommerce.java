@@ -1,4 +1,23 @@
-import org.openqa.selenium.By;
+/**
+ * 1. Setup chrome browser.
+ * 2. Open URL.
+ * 3. Print the title of the page.
+ * 4. Print the current url.
+ * 5. Print the page source.
+ * 6. Navigate to Url.
+ * “https://demo.nopcommerce.com/login?returnUrl=
+ * %2F”
+ * 7. Print the current url.
+ * 8. Navigate back to the home page.
+ * 9. Navigate to the login page.
+ * 10. Print the current url.
+ * 11. Refresh the page.
+ * 12. Enter the email to email field.
+ * 13. Enter the password to password field.
+ * 14. Click on Login Button.
+ * 15. Close the browser.
+ */
+        import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -32,6 +51,7 @@ public class ComNopcommerce {
         System.out.println(driver.getPageSource()); // print page source
         String loginURL = "https://demo.nopcommerce.com/login?returnUrl=%2F"; // store new url
         driver.navigate().to(loginURL); // tell driver to navigate to this new url
+
         driver.navigate().back(); // go back a page to home page
         driver.navigate().forward();// go forward to login page
         System.out.println(driver.getCurrentUrl()); // print current url
